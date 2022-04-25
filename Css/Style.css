@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*aliceblue banner*/
+.backgroundBanner{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Calculator*/
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+
+#text{
+    width: 32.2vh;
+    height: 7vh;
+    text-align: right;
+}
+
+input{
+    height: 5vh;
+    width: 8vh;
+}
+
+@media screen and (max-width: 480px) {
+    .row1{
+        display: block;
+    }
+
+    .box1,.box2,.box3{
+        padding: 40px;
+        height: 10vh;
+        width: 50vw;
+    }
+
+    .box1{
+        margin-top: 100%;
+    }
+    .math-each{
+        top: 135%;
+    }
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="backgroundBanner">
+
+    </div>
+    <div class="calculator">
+        <h2>CALCULATOR</h2>
+        <form name="calculator" id="form">
+            <table id="table">
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" name="display" id="text" value="" disabled>
+                        </td>
+                        </tr>
+                        <div class="class2">
+                        <tr>
+                            <td><input type="button" name="Clear" value="C" onclick="document.getElementById('text').value =''" id="first"></td>
+                            <td><input type="button" name="brace" value="(" onclick="display.value +='('"></td>   
+                            <td><input type="button" name="brace" value=")" onclick="display.value +=')'"></td>   
+                            <td colspan="2">  <input id="backspace" type="BUTTON" value=" X " name="backspace" onClick="document.calculator.text.value =
+                            document.calculator.text.value.substring(0,document.calculator.text.value.length*1 -1)"></td>
+                        </tr>
+                            
+                        <tr>
+                            <td><input type="button" name="seven" value="7" onclick="display.value +='7'" id="first"></td>
+                            <td><input type="button" name="eight" value="8" onclick="display.value +='8'"></td>
+                            <td><input type="button" name="nine" value="9" onclick="display.value +='9'"></td>
+                            <td><input type="button" name="minus" value="-" onclick="display.value +='-'"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" name="four" value="4" onclick="display.value +='4'" id="first"></td>
+                            <td><input type="button" name="five" value="5" onclick="display.value +='5'"></td>
+                            <td><input type="button" name="six" value="6" onclick="display.value +='6'"></td>
+                            <td><input type="button" name="plus" value="+" onclick="display.value +='+'"></td>   
+                        </tr>
+
+                        <tr>
+
+                            <td><input type="button" name="one" value="1" onclick="display.value +='1'" id="first"></td>
+                            <td><input type="button" name="two" value="2" onclick="display.value +='2'"></td>
+                            <td><input type="button" name="three" value="3" onclick="display.value +='3'"></td>
+                            <td><input type="button" name="*" value="*" onclick="display.value +='*'"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" name="div" value="%" onclick="display.value +='/'" id="first"></td>
+                            <td><input type="button" name="zero" value="0" onclick="display.value +='0'"></td>
+                            <td><input type="button" name="dot" value="." onclick="display.value +='.'"></td>
+                            <td><input id="equal" type="button" name="equal" value="=" onclick="display.value=eval(display.value)"></td>
+                        </tr>
+                        </div>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
